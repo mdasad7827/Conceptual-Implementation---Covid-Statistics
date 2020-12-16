@@ -107,6 +107,7 @@ app.get("/healthyStates", async (req, res) => {
       },
     },
   ]);
+  res.send({ data: resDoc });
 });
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
